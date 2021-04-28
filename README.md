@@ -16,7 +16,7 @@ browsers and screens.
 
 ![screenshot top](./Assets/Images/top.png)
 
-![screenshot bottom](./Assets/Images/bottom.png)
+
 
 
 
