@@ -141,7 +141,7 @@ h3 , h5, p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px;
   width: 100%;
   align-content: center;
