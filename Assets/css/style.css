@@ -63,9 +63,9 @@ article {
 }
 
 section {
-   margin-right:100px;
-   margin-left: 200px;
-    width: 70%;
+   margin-right: auto;
+   margin-left: auto;
+    width: 60%;
     align-items: center;
 }
 .contact {
