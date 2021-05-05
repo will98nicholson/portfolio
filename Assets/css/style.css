@@ -123,3 +123,6 @@ section {
     transition: all 2s ease-in;
   
   }
+  img {
+    border: solid 2px black;
+  }
