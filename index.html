@@ -2,110 +2,214 @@
 <html lang="en">
 
 <head>
-    <title>William's Portfolio</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
+    <title>William's Portfolio</title>
 </head>
 
 
-<body>
-    <header>
-        <h1>William Nicholson</h1>
-        <nav>
-            <a href="#abtme">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#end">Contact Me</a>
-            <a href="https://drive.google.com/file/d/1ZuRDrnnEFjP-QvJArmn7a8XOeux5Lkho/view?usp=sharing"
-                target="_blank">Resume</a>
-        </nav>
-    </header>
+<header>
+    <div class="uk-position-relative">
+        <div class="hero">
+            <div class="herotext">
+                <img class="bannerimage" src="Assets/Images/award.jpg" alt="seminar">
+            </div>
+            <div class="banner-overlay-div"></div>
+            <div class="herotext">
+                <h2>Hello, I'm William</h2>
+            </div>
+        </div>
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#abtme">About Me</a></li>
+                        <li>
+                            <a href="#">Work</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#work">Grid</a></li>
 
-    <section class="hero">
-        <div class="heroimage">
-            <img class="bannerimage" src="Assets/Images/award.jpg" alt="seminar" />
+                                    <li class="uk-nav-header">Projects</li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="https://will98nicholson.github.io/WeatherApp/" target="_blank">Weather
+                                            App</a></li>
+                                    <li><a href="https://will98nicholson.github.io/QuizTime/" target="_blank">Quiz
+                                            Game</a>
+                                    </li>
+                                    <li><a href="https://github.com/will98nicholson/TeamProfile" target="_blank">Company
+                                            Profile Generator</a></li>
+                                    <li><a href="https://github.com/will98nicholson/note_taker"
+                                            target="_blank">Note-Taker
+                                            Application</a></li>
+                                    <li><a href="https://github.com/will98nicholson/Employee-Managemet-"
+                                            target="_blank">Employee Management System</a></li>
+                                    <li><a href="https://will98nicholson.github.io/hw3/" target="_blank">Password
+                                            Generator</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="https://drive.google.com/file/d/1ZuRDrnnEFjP-QvJArmn7a8XOeux5Lkho/view?usp=sharing"
+                                target="_blank">Resume</a></li>
+                        <li>
+                            <a href="#">Contact Me</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="https://www.linkedin.com/in/william-nicholson-3a49a2154/"
+                                            target="_blank">LinkedIn</a></li>
+                                    <li><a href="https://github.com/will98nicholson" target="_blank">Github</a>
+                                    </li>
+                                    <li>Email: will98nicholson@gmail.com</li>
+                                    <li>Phone: 614-832-2893</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="banner-overlay-div"></div>
-        <div class="herotext">
-            <h2>Hello, I'm William</h2>
-        </div>
-        <article class="about-me" id="abtme">
-            <h3>About Me</h3>
-            <p>William Nicholson is a full-stack web developer with an extensive background in sustainability and
+    </div>
+</header>
+
+<body>
+    <article class="uk-article" id="abtme">
+        <h1 class="uk-article-title">About Me</h3>
+            <p class=uk-text-lead>William Nicholson is a full-stack web developer with an extensive background in
+                sustainability and
                 renewable energy campaigns.
                 A graduate of the University of Wisconsin-Madison, William is currently completing training in both
                 front-end and back-end web development from the Ohio State University and Trilogy, and is continuously
                 building on his portfolio of projects.
-
-
             </p>
-        </article>
+    </article>
+    <section class="grid" id="work">
+        <div class="uk-animation-toggle" tabindex="0">
+            <a href=href="https://will98nicholson.github.io/WeatherApp/" target="_blank">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-scale-down"
+                    uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="./Assets/Images/weather.png" alt="pass" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Weather App</h3>
+                            <p>A basic application that can show current weather and a 5-day forecast for your city.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="uk-animation-toggle" tabindex="0">
+            <a href="https://will98nicholson.github.io/QuizTime/" target="_blank">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-scale-down"
+                    uk-grid>
+                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="./Assets/Images/quiz.png" alt="quiz" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Quiz Game</h3>
+                            <p>An interative quiz that keeps score and displays an organized leaderboard</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="uk-animation-toggle" tabindex="0">
+            <a href="https://github.com/will98nicholson/TeamProfile" target="_blank">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-scale-down"
+                    uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="./Assets/Images/scrnsht.png" alt="pass" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Company Profile Generator</h3>
+                            <p>A program that will return an organized webpage with simple profiles company employees
+                                based
+                                on
+                                inputed information.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="uk-animation-toggle" tabindex="0">
+            <a href="https://github.com/will98nicholson/note_taker" target="_blank">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-scale-down"
+                    uk-grid>
+                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="./Assets/Images/after.png" alt="quiz" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Note-Taker Application</h3>
+                            <p>Note-Taking application that demonstrates basic Get and Post API routes</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="uk-animation-toggle" tabindex="0">
+            <a href="https://github.com/will98nicholson/Employee-Managemet-" target="_blank">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-scale-down"
+                    uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="./Assets/Images/three.png" alt="pass" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Employee Management System</h3>
+                            <p>A program that can input, organaize, and update informattion on a company.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="uk-animation-toggle" tabindex="0">
+            <a href="https://will98nicholson.github.io/password-generator/" target="_blank">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-scale-down"
+                    uk-grid>
+                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="./Assets/Images/password.png" alt="quiz" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Password Generator</h3>
+                            <p>Upon answering a couple prompted questions, this app will return a randomly generated
+                                password.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </section>
-
-    <main>
-
-        <!---flex container-->
-        <section class="flex-container" id="work">
-
-            <a href="https://will98nicholson.github.io/WeatherApp/" target="_blank" class="card" id="one">
-                <h5>Weather App</h5>
-                <div class="photo">
-                    <img src="./Assets/Images/weather.png" alt="pass" />
-                </div>
-            </a>
-
-            <a href="https://will98nicholson.github.io/QuizTime/" target="_blank" class="card" id="two">
-                <h5>Quiz Game</h5>
-                <div class="photo">
-                    <img src="./Assets/Images/quiz.png" alt="quiz" />
-                </div>
-            </a>
-
-
-            <a href="https://github.com/will98nicholson/TeamProfile" target="_blank" class="card" id="three">
-                <h5>Company Profile Generator</h5>
-                <div class="photo">
-                    <img src="./Assets/Images/scrnsht.png" alt="plc" />
-                </div>
-            </a>
-
-            <a href="https://github.com/will98nicholson/note_taker" target="_blank" class="card" id="four">
-                <h5>Note-Taker Application</h5>
-                <div class="photo">
-                    <img src="./Assets/Images/after.png" alt="plc" />
-                </div>
-            </a>
-
-            <a href="https://github.com/will98nicholson/Employee-Managemet-" target="_blank" class="card" id="five">
-                <h5>Employee Management System</h5>
-                <div class="photo">
-                    <img src="./Assets/Images/three.png" alt="plc" />
-                </div>
-            </a>
-            <a href="https://will98nicholson.github.io/hw3/" target="_blank" class="card" id="six">
-                <h5>Password Generator</h5>
-                <div class="photo">
-                    <img src="./Assets/Images/password.png" alt="plc" />
-                </div>
-            </a>
-
-        </section>
-        <footer class="contact" id="end">
-            <div>
-                <h6>Contact Me</h6>
-            </div>
-            <div>
-                <address>
-                    <a href="16146146114">614.614.6114</a>
-                    <a href="will98nicholson@gmail.com">will98nicholson@gmail.com</a>
-                    <a href="https://github.com/will98nicholson" target="_blank">https://github.com/will98nGithub</a>
-                    <a href="https://www.linkedin.com/in/william-nicholson-3a49a2154/" target="_blank">LinkedIn</a>
-                </address>
-            </div>
-        </footer>
-    </main>
+    <footer class="contact" id="end">
+        <div>
+            <h6>Contact Me</h6>
+        </div>
+        <div>
+            <address>
+                <a href="#">614.832.2893</a>
+                <a href="will98nicholson@gmail.com">Email</a>
+                <a href="https://github.com/will98nicholson" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/william-nicholson-3a49a2154/" target="_blank">LinkedIn</a>
+            </address>
+        </div>
+    </footer>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
 </body>
-
-
 
 </html>

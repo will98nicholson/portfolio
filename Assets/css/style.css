@@ -1,232 +1,123 @@
-* {
-    box-sizing: border-box;
-  }
-  :root {
-    --primary: #8edc97;
-    --light: #ffffff;
-    --dark: #1a237e;
-  }
+/* * {
+    background-color: #f5f3f4;
+} */
 
-  body {
-    font-family: Arial;
-    margin: 0;
-    line-height: 1;
-    background-color:#4cc9f0;
-    
-  }
-  
-  header {
-    background: #3f37c9;
-    border-radius: 20px;
-    color: #fff;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-
-  header h1{
-    color: white;
-    border: 8px solid white;
-    border-radius: 36px;
-    margin: 0;
-    line-height: 1;
-
-  }
-
-  nav {
-    display: flex;
-    background-color: #4361ee;
-    flex-direction: row;
-    border-radius: 36px;
-
-  }
-  
-  nav a {
-    color: #13293d;
-    border-radius: 36px;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 2s ease-in;
-  }
-nav a:hover {
-  background-size: 100% 100%;
-  color: white;
-}
-
-h2 {
-  color: whitesmoke;
-  font-family: serif;
-  font-stretch: semi-expanded;
-  font-size: 30px;
-  
-}
-h5 {
-  color: white
-}
-.one img {
-  width: 100%;
-}
-  .hero {
+.banner-overlay-div {
+    grid-area: 1 / 1 / 2 / 2;
     display: grid;
-    grid-template-columns: 0.5fr; 
-    grid-template-rows: 350px; 
+    max-width: 100%;
+    /* background: black; */
+    background: linear-gradient(
+      40deg,
+      rgba(0, 0, 0, 0.7777485994397759) 20%,
+      rgba(255, 255, 255, 0) 90% );
+  }
+  h2 {
+    color: whitesmoke;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-stretch: semi-expanded;
+    font-size: 30px;
+    
+  }
+   .hero {
+    display: grid;
+     /* grid-template-columns: 0.5fr; 
+    grid-template-rows: 350px;  */
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px; 
     align-content: center;
     justify-content: center;
+  }  
+.herotext {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    align-items: center;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+  }
+.bannerimage {
+    display: grid;
+    
+    object-fit: cover; 
+
   }
 
   .heroimage {
     grid-area: 1 / 1 / 2 / 2;
-  }
-  .banner-overlay-div {
-    grid-area: 1 / 1 / 2 / 2;
-    display: grid;
-    max-width: 100%;
-    background: black;
-    background: linear-gradient(
-      40deg,
-      rgba(0, 0, 0, 0.7777485994397759) 30%,
-      rgba(255, 255, 255, 0) 100% );
+    
   }
 
-  .herotext {
-    grid-area: 1 / 1 / 2 / 2;
-    display: grid;
+  header {
+      margin-bottom: 20px;
+  }
+
+article {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+section {
+   margin-right:100px;
+   margin-left: 200px;
+    width: 70%;
     align-items: center;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .bannerimage {
-    display: grid;
-    min-width: 350px; 
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-  }
-.about-me .bannerimage {
-  display:flex;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 20px;
-  width: 100%;
-  align-items: center;
-  
 }
-.about-me {
-  color: white;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 20px;
-  align-items: center;
-}
-.about-me p {
-  justify-content: center;
-}
-h3 , h5, p {
-  text-align: center;
-}
-
-
-.flex-container {
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 10px;
-  width: 100%;
-  align-content: center;
-  }
-
-.photo {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  background: #4895ef;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  padding: 10px;
-  flex: 0 0 400px;
-  margin: 5px;
-  font-size: 35px;
-  transition: all 1s;
-  }
-.card:hover {
-  background-size: 100% 100%;
-  color: white;
-  transition:cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.card:first-child {
-  min-height: 350px;
-  flex-basis: 100%;
-  }
 .contact {
-  align-content: center;
-}
-address {
-  display: flex;
-  background-color: #4361ee;
-  flex-direction: row;
-  border-radius: 36px;
-}
-.contact address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-.contact address a:hover {
-  background-size: 100% 100%;
-  color: white;
-}
+    align-content: center;
+    
+  }
+  address {
+    display: flex;
+    background-color: #grey;
+    flex-direction: row;
+    border: 3px solid black;
+    border-radius: 36px;
+  }
+  .contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  .contact address a:hover {
+    background-size: 100% 100%;
+    color: white;
+  }
 
-.contact h6 {
-  margin: auto;
-  width: 10%;
-  color: white;
-  border: 5px solid white;
-  border-radius: 36px;
-  line-height: 3;
-  font-size: large;
-  text-align: center;
-  min-width: 50px;
-}
-
-address a {
-  color: #13293d;
-  border-radius: 36px;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: all 2s ease-in;
-
-}
-
-@media screen and (max-width: 850px) {
-  .flex-container,
-  nav, .contact address {
-    flex-direction: column;
+  .uk-card {
+      border: solid 3px black;
+      border-radius: 36px;
+      padding: 30px;
+  }
+  h6 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   }
   
-.contact h6 {
-  justify-content: center;
-  text-align: center;
-  min-width: 50px;
-}
-h6 {
-  font-size: x-small;
-}
-}
+  .contact h6 {
+    margin: auto;
+    width: 10%;
+    color: black;
+    border: 5px solid black;
+    border-radius: 36px;
+    line-height: 3;
+    font-size: large;
+    text-align: center;
+    min-width: 50px;
+    
+  }
+  
+  address a {
+    color: #13293d;
+
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: all 2s ease-in;
+  
+  }
