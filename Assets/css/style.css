@@ -99,7 +99,9 @@ section {
   h6 {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   }
-  
+  .me {
+    padding: 15px;
+  }
   .contact h6 {
     margin: auto;
     width: 10%;
